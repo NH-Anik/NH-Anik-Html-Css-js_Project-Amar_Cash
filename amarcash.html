@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar Cash</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- nav bar work start -->
+    <nav class="nav">
+        <a class="logo" href="#">Amar Cash</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a id="AgentDetails" href="#">Agent Details
+                <div class="AgentDetailsiinfo" id="AgentDetailsiinfo">
+                    <ul class="info">
+                        <li><a id="agentshow" href="#">Agent </a></li>
+                        <li><a id="agentphonpassshow" href="#">Agent Number & Password</a></li>
+                        <li><a id="agentshownotification"href="#">Agent Notification</a></li>
+                    </ul>
+                </div>
+            </a></li>
+            <li><a id="FristDetails" href="#">Frist Person Details
+                <div class="AgentDetailsiinfo" id="FristDetailsinfo">
+                    <ul class="info">
+                        <li><a id="firstshow" href="#">Frist Person</a></li>
+                        <li><a id="firstphonpassshow" href="#">Frist Person Number & Password</a></li>
+                        <li><a id="firstshownotification" href="#">Frist Person Notification</a></li>
+                    </ul>
+                </div>
+            </a></li>
+            <li><a id="SecontDetails" href="#">Secont Person Details
+                <div class="AgentDetailsiinfo" id="SecontDetailsinfo">
+                    <ul class="info">
+                        <li><a id="secshow"  href="#">Secont Person</a></li>
+                        <li><a id="secphonpassshow" href="#">Secont Person Number & Password</a></li>
+                        <li><a id="secshownotification" href="#">Secont Person Notification</a></li>
+                    </ul>
+                </div>
+            </a></li>
+        </ul>
+        <div>
+            <button id="comnotification" >Company Notification</button>
+           <button id="LogOut" >LogOut</button>
+        </div>
+    </nav>
+    <!-- nav bar work end -->
+
+    <!-- main company design work end -->
+    <div class="main">
+        <!-- company sent taka work start -->
+        <div class="companyallballance">
+            <div class="companyTotalBalance">
+                <h6>Company-investment-Balance</h6>
+                <div id="cCompanyTotalBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Now-Total-Balance</h6>
+                <div id="cNowTotalBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Now-Cash-Balance</h6>
+                <div id="cNowCashBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Total-Profit-Balance</h6>
+                <div id="cTotalProfitBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Profit-with-Total-Balance</h6>
+                <div id="cProfitwithTotalBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Total-Agent-Send-Balance</h6>
+                <div id="cTotalAgentSendBalance" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Company-Send-Agent-Profit</h6>
+                <div id="cCompanySendAgentProfit" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>All-Employee-Selary</h6>
+                <div id="cCompanyAllSelary" class="cbalanceDisplay"></div>
+            </div>
+            <div class="companyTotalBalance">
+                <h6>Company-Profit</h6>
+                <div id="cCompanyProfit" class="cbalanceDisplay"></div>
+            </div>
+
+            <button id="Companywithdrew" class="sendbtn">Company withdrew</button>
+            <button id="Employeewithdrew" class="sendbtn">Employee withdrew</button>
+            <button id="Agentwithdrew" class="sendbtn">Agent withdrew</button>
+
+        </div>
+        
+        <div class="company">
+            <form action="" name="company">
+                <label for="company">Main Company Send tk:</label>
+                <input id="companyInput" name="companyInput" class="contkinput" type="text" placeholder="Enter a amount only for agent">
+                <input id="companyInputpn" name="companyInputpn" type="text" class="contkinput" placeholder="Enter your PhonNumber" >
+                <input id="companyInputps" name="companyInputps" type="password" class="contkinput" placeholder="Enter your password 6 Digite" >
+                <button id="companySend" class="companySend" type="button">Send</button>
+                <button id="companyClear" class="companySend" type="button">clear</button>
+                <div id="companydisplay" class="massage"></div>
+            </form>
+            
+        </div>
+        <!-- company sent taka work end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+        <!-- <p>now your balance is ${user.id} agent balance is ${user.id} thankyou</p> -->
+
+
+        <!-- all notification work start -->
+       <div class="noty">
+            <h1>This Display Only Use View All Notification</h1>
+            <div id="cnotification" class="notification">
+                <h2>Company notification-<a href="#" id="ccrosnoti" class="crosnoti" ><i class="fa-solid fa-xmark"></i></a></h2>
+            </div>
+            <div id="anotification" class="notification">
+                <h2>Agent notification-<a href="#" id="acrosnoti" class="crosnoti" ><i class="fa-solid fa-xmark"></i></a></h2>
+            </div>
+            <div id="fnotification" class="notification">
+                <h2>First person notification-<a href="#" id="fcrosnoti" class="crosnoti" ><i class="fa-solid fa-xmark"></i></a></h2>
+            </div>
+            <div id="snotification" class="notification">
+                <h2>Second person notification-<a href="#" id="scrosnoti" class="crosnoti" ><i class="fa-solid fa-xmark"></i></a></h2>
+            </div>
+       </div>
+        <!-- all notification work end -->
+        <!-- all pnone number password work start -->
+        <div id="nnumberPassword" class="nnumberPassword">
+            <h1>Here Number or Password-<a href="#" id="phonpasscros" class="crosnoti" ><i class="fa-solid fa-xmark"></i></h1>
+            <div  class="numberPassword">
+                <div class="number">
+                    <h4>Agent Number 01711111111</h4>
+                    <h4>First Person 01711111112</h4>
+                    <h4>Second Person 01711111113</h4>
+                </div>
+                <div class="password">
+                    <h4>Agent Password 789456</h4>
+                    <h4>First Password 456123</h4>
+                    <h4>Second Password 123456</h4>
+                </div>
+            </div>
+        </div>
+        <!-- all pnone number password work end -->
+    </div>
+
+    
+    <!-- main company design work end -->
+    <!-- Agent work start -->
+    <div class="threeinall">
+
+        <div id="agc" class="one">
+            <a href="#" id="agcros" class="cros" ><i class="fa-solid fa-xmark"></i></a>
+            <h2 class="agenthtwo">Agent</h2>
+            <h2>Balance</h2>
+            <div id="agentbalanceDisplay" class="balanceDisplay"></div>
+            <form action="" name="agent">  
+              <div>
+                   <label class="labelpn" for="sendmoney">Phon Number :</label>
+                   <input id="agentImputNumber" class="inputnumber" name="agentINV" type="text" placeholder="Enter your number" >
+              </div>
+               <div>
+                   <label class="labelpn" for="sendmoney">Send Money :</label>
+                   <input id="agentImputAmount" class="inputnumber" name="agentINVone" type="text" placeholder="Enter your amount" >
+               </div>
+               <button id="agentSend" class="sendbtn" type="button" >Send Money</button>
+               <button id="agentClear" class="sendbtn" type="button" >clear</button>  
+               <div id="agentMassage" class="massage"></div>
+               <p>Agent Number :01711111111</p>
+            </form> 
+            <!-- agent sendtime password -->
+            <div class="passwordCoverPage">
+                <div id="agentpassCover" class="passCover">
+                    <a href="#" id="agentpasswordcrocebtn" ><i class="fa-solid fa-xmark"></i></a>
+                    <h2>Enter Your Password</h2>
+
+                    <h2 id="numberoramountshowdisplay" class="numberoramountshowdisplay" ></h2>
+
+                    <input id="agentpasswordinput" name="agentpassword" class="password" type="password">
+
+                    <h5 id="passwordwrongshowdisplay" class="passwordwrongshowdisplay" ></h5>
+
+                    <button id="agentpasswordbtn" class="sendbtn">send</button>
+                    <button id="agentpasswordclearbtn" class="sendbtn">Clear</button> 
+                 </div>
+            </div>  
+        </div>
+        <!-- Agent work end -->
+
+
+
+
+
+
+
+
+        <!-- First Person work start -->
+        <div id="fcros" class="one">
+            <a href="#" id="ficros" class="cros" ><i class="fa-solid fa-xmark"></i></a>
+            <h2 class="agenthtwo">First Person</h2>
+            <h2>Balance</h2>
+            <div id="FirstPersonbalanceDisplay" class="balanceDisplay"></div>
+
+         <form action="" name="firstfrom">
+            <div class="fastwork">
+                <label for="select" class="twoselect">Select option : 
+                    <input id="checkboxAgent" type="radio" value="Agent"  name="checkbox">-Agent 
+                    <input id="checkboxPersonal" type="radio" value="Personal" name="checkbox">-Personal
+                </label>
+            </div>
+
+            <div>
+                <label class="labelpn" for="sendmoney">Phon Number :</label>
+                <input id="firstNumber" name="fNumber" class="inputnumber" type="text" placeholder="Enter your number">
+            </div>
+
+            <div>
+                <label class="labelpn" for="sendmoney">Send Money :</label>
+                <input id="firstMoney" name="fMoney" class="inputnumber" type="text" placeholder="Enter your amount">
+            </div>
+            <button id="firstSend" class="sendbtn" type="button"  >Send Money</button>
+            <button id="firstClear" class="sendbtn" type="button"  >clear</button>
+            <div id="firstMassage" class="massage"></div>
+            <p>First Person :01711111112</p>
+         </form> 
+          <!-- frist parson sendtime password -->
+         <div class="passwordCoverPage">
+            <div id="fristpassCover" class="passCover">
+                <a href="#" id="fristpasswordcrocebtn" ><i class="fa-solid fa-xmark"></i></a>
+                <h2>Enter Your Password</h2>
+
+                <h2 id="fristnumberoramountshowdisplay" class="numberoramountshowdisplay" ></h2>
+
+                <input id="fristpasswordinput" name="fristpassword" class="password" type="password">
+
+                <h5 id="fristpasswordwrongshowdisplay" class="passwordwrongshowdisplay" ></h5>
+
+                <button id="fristpasswordbtn" class="sendbtn">send</button>
+                <button id="fristypasswordclearbtn" class="sendbtn">Clear</button> 
+             </div>
+         </div> 
+        </div>
+        <!-- First Person work end -->
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!-- Second Person work start -->
+        <div id="seccrosh" class="one">
+            <a href="#" id="seccros" class="cros" ><i class="fa-solid fa-xmark"></i></a>
+            <h2 class="agenthtwo">Second Person</h2>
+            <h2>Balance</h2>
+            <div id="SecondPersonbalanceDisplay" class="balanceDisplay"></div>
+            <form action="" name="secFrom">
+                <div class="fastwork">
+                    <label for="select" class="twoselect">Select option : 
+                        <input type="radio" value="Agent"  name="checkbox">-Agent 
+                        <input type="radio" value="Personal" name="checkbox">-Personal
+                    </label>
+                </div>
+                <div>
+                    <label class="labelpn" for="sendmoney">Phon Number :</label>
+                    <input id="secNumber" name="secNumber" class="inputnumber" type="text" placeholder="Enter your number">
+                </div>
+                <div>
+                    <label class="labelpn" for="sendmoney">Send Money :</label>
+                    <input id="secMoney" name="secMoney" class="inputnumber" type="text" placeholder="Enter your amount">
+                </div>
+                <button id="secSend" class="sendbtn" type="button"  >Send Money</button>
+                <button id="secClear" class="sendbtn" type="button" >clear</button>
+                <div id="secMassage"class="massage"></div>
+                <p>Second Person :01711111113</p>
+            </form>  
+            <!-- second parson sendtime password -->
+            <div class="passwordCoverPage">
+                <div id="secpassCover" class="passCover">
+                   <a href="#" id="secpasswordcrocebtn" ><i class="fa-solid fa-xmark"></i></a>
+                   <h2>Enter Your Password</h2>
+   
+                   <h2 id="secnumberoramountshowdisplay" class="numberoramountshowdisplay" ></h2>
+   
+                   <input id="secpasswordinput" name="secpassword" class="password" type="password">
+   
+                   <h5 id="secpasswordwrongshowdisplay" class="passwordwrongshowdisplay" ></h5>
+   
+                   <button id="secpasswordbtn" class="sendbtn">send</button>
+                   <button id="secpasswordclearbtn" class="sendbtn">Clear</button> 
+                </div>
+            </div> 
+        </div>
+        <!-- Second Person work end -->        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar cash</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="acmc">
+            <h1 >Amar cash main com.</h1>
+        </div>
+        <div class="all">
+            <!-- loginbox work start-->
+            <div class="loginbox">
+                <div class="loginfild">
+                    <h1>Login</h1>
+                    <label for="">Enter your Email:</label>
+                    <input id="email" type="email" name="email">
+                    <label for="">Enter your password:</label>
+                    <input id="password" type="password">
+                    <div class="btnlogin">
+                        <button id="loginbtn" type="button">login</button>
+                        <button id="clearbtn" type="button">Clear</button>
+                    </div>
+                    <div class="btnlogin">
+                        <a id="createaccountShow" href="#">Create a account</a>
+                        <a id="forgetaccountShow" href="#">Forgot a password ?</a>
+                    </div>
+                    <a id="openeyelogin" class="eyeshowhideopen" href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a id="closeeyelogin" class="eyeshowhideclose" href="#"><i class="fa-solid fa-eye-slash"></i></i></a>
+                </div>
+            </div>
+           <!-- loginbox work end -->
+           <!-- createsignupbox work start -->
+            <div id="createsignupbox" class="loginbox create">
+                <div class="loginfild">
+                    <h1>Create a accounte</h1>
+                    <label for="">Enter your Email:</label>
+                    <input id="createemail" type="email" placeholder="Enter your email">
+                    <label for="">Enter your Phon number:BD(11 digite)</label>
+                    <input id="createphonenumber" type="text" placeholder="Enter your phonNumber 11 digite">
+                    <label for="">Enter your password:(6 digite)</label>
+                    <input id="createpassword" type="password"placeholder="Enter your password 6 digite">
+                    <div class="btnlogin">
+                        <button id="createSignUpBtn" type="button">SignUp</button>
+                        <button id="createClearBtn"type="button">Clear</button>
+                    </div>
+                    <a id="createbackBtn" href="#">Back to login</a>
+                    <!-- open eye close eye start -->
+                    <a id="createopeneyelogin" class="createeyeshowhideopen" href="#"><i class="fa-solid fa-eye"></i></a>
+                    <a id="createcloseeyelogin" class="createeyeshowhideclose" href="#"><i class="fa-solid fa-eye-slash"></i></i></a>
+                    <!-- open eye close eye -->
+                    <div id="createpopupbox" class="forgetpopup">
+                        <h2>Check Email</h2>
+                        <label for="">Enter your Varification 4 digite pin</label>
+                        <input id="createpopupboxinput" type="password" placeholder="Enter Pin number">
+                        <button id="createpopupboxokbtn" type="button">OK</button>
+                        <button id="createpopupboxClearlbtn" type="button">Clear</button>
+                        <a id="createpopupboxCancellbtn" href="#"> <i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- createsignupbox work end -->
+            <!-- forgetpassbox work start -->
+            <div id="forgetpassbox" class="loginbox forgetpass">
+                <div class="loginfild ">
+                    <h1>Forgot accounte</h1>
+                    <label for="">Enter your Email:</label>
+                    <input id="forgetemail" type="email">
+                    <div class="btnlogin">
+                        <button id="forgetpasssubmitbtn" type="button">Submit</button>
+                        <button id="forgetpassclearbtn" type="button">Clear</button>
+                    </div>
+                    <a id="forgetbackBtn" href="#">Back to login</a>
+                    <div id="forgetpopupbox" class="forgetpopup">
+                        <h2>Check Email</h2>
+                        <label for="">Enter your Varification 4 digite pin</label>
+                        <input id="forgetpopupboxinput" type="password" placeholder="Enter Pin number">
+                        <button id="forgetpopupboxokbtn" type="button">OK</button>
+                        <button id="forgetpopupboxClearlbtn" type="button">Clear</button>
+                        <a id="forgetpopupboxCancellbtn" href="#"> <i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div id="ppforgetpopupbox" class="forgetpopup">
+                        <h2>Change Password</h2>
+                        <label for="">Enter your password only 6 digite Number</label>
+                        <input id="oneforgetpopupboxinput" type="password" placeholder="New Password">
+                         <!-- open eye close eye start -->
+                         <div class="xxxxxxxxxxx">
+                         <a id="forgotopeneyelogin" class="forgoteyeshowhideopen" href="#"><i class="fa-solid fa-eye"></i></a>
+                         <a id="forgotcloseeyelogin" class="forgoteyeshowhideclose" href="#"><i class="fa-solid fa-eye-slash"></i></i></a>
+                         </div>
+                         <!-- open eye close eye -->
+                        <input id="twoforgetpopupboxinput" type="password" placeholder="Confirm password">
+                        <button id="ppforgetpopupboxokbtn" type="button">OK</button>
+                        <button id="ppforgetpopupboxClearlbtn" type="button">Clear</button>
+                        <a id="ppforgetpopupboxCancellbtn" href="#"> <i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                </div>   
+            </div>
+            <!-- forgetpassbox work end -->
+        </div>
+       <div class="information">
+        <div class="info"><p>Fix some details<br>Pin number is :1234 <br> Email:nhanikk@email.com <br> Phone Number:01700000000 <br> Password:789456</p></div>
+        <div class="dis"><h1>Here All Information</h1></div>
+        <div class="displ">
+            <p>Update email:<span id="ue"></span></p>
+            <p>Update phonNumber:<span id="upn"></span></p>
+            <p>Update password: <span id="up"></span></p>
+        </div>
+       </div>
+    </div>
+    <div id="congratulation" class="congratulation">
+        <h1>Congratulation Your Account is Ready Pleace Login</h1>
+        <a id="congratulationCancellbtn" class="congratula" href="#"> <i class="fa-solid fa-xmark"></i></a>
+    </div>
+    <script src="./js/fontlogin.js"></script>
+</body>
+</html>

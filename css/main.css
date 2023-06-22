@@ -1,0 +1,310 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* .nav h1{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(6, 65, 194);
+} */
+/* nav work start */ 
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkcyan;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: #fff;
+}
+.nav ul li a{
+    color: #fff;
+}
+.nav ul li a:hover {
+    color: #0bff34;
+}
+.nav button{
+    padding: 15px 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.logo{
+    width: 20%;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(6, 65, 194);
+}
+/* nav in proparty work start */
+.AgentDetailsiinfo{
+    position: absolute;
+    background-color: rgb(166, 168, 170);
+    width: 200px;
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+    z-index: 999;
+}
+.download{
+    display: block;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav in proparty work end */
+/* nav work end */
+
+/* company balance work start */
+.companyallballance{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cbalanceDisplay{
+    padding: 5px 0;
+    width: 100%;
+    background-color: rgb(52, 151, 5);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+.companyTotalBalance{
+    text-align: center;
+    color: #18271a;
+    font-size: 25px;
+    margin: 20px 10px 0 10px;
+}
+/* company balance work end */
+
+.fastwork{
+    margin-bottom: 15px;
+}
+.threeinall{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* display: none; */
+}
+.twoselect{
+    font-size: 30px;
+    color: rgb(34, 33, 33);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.one{
+    position: relative;
+    width: 30%;
+    background-color: lightblue;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    color:#1f221f;
+    border-radius: 10px;
+    display: none;
+}
+.cros{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+.one p{
+    margin-top: 10px;
+}
+.agenthtwo{
+    margin-bottom: 15px;
+    color: lightseagreen;
+}
+.balanceDisplay{
+    padding: 15px 0;
+    margin-top: 15px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: dimgrey;
+    font-weight: 700;
+    font-size: 30px;
+}
+form{
+    margin-top: 15px;
+}
+.labelpn{
+    font-size: 30px;
+    font-weight: 500;
+}
+.inputnumber{
+    outline: none;
+    padding: 5px 10px;
+}
+.sendbtn{
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+.massage{
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(213, 219, 219);
+    margin-top: 15px;
+    color: rgb(241, 8, 8);
+}
+.d{
+    font-size: 30px;
+    color: red;
+}
+.numberdetails{
+ text-align: center;
+ background-color: beige;
+ color: red;
+ border-radius: 10px;
+ padding: 10px 0;
+ box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    background-color: rgb(174, 190, 190);
+    box-sizing: border-box;
+}
+.company{
+    width: 20%;
+}
+.company label{
+    font-size: 25px;
+    color: rgb(121, 64, 24);
+}
+.contkinput{
+    width: 380px;
+    font-size: 25px;
+     outline: none;
+     margin-top: 10px;
+}
+.companySend{
+    padding: 10px 15px;
+    margin: 20px 20px 0 10px;
+}
+/* agent pass work start  */
+.passwordCoverPage{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+.passCover{
+    height: 280px;
+    width: 400px;
+    background-color: cadetblue;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px 20px  60px 20px;
+    display: none;
+}
+.passCover a{
+    margin: 10px 0 0 340px;
+
+}
+.passCover a i{
+    color: red;
+    font-size: 20px;
+
+}
+
+.passCover input{
+    outline: none;
+    font-size: 20px;
+    color: cadetblue;
+}
+
+.numberoramountshowdisplay{
+    color:white;
+    font-size: 15px;
+}
+.passwordwrongshowdisplay{
+    color: red;
+    font-size: 20px;
+}
+
+/* all phone Number or password work start */
+.noty{
+    position: relative;
+    width: 15%;
+    height: 300px;
+    background-color: lemonchiffon;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+.nnumberPassword{
+    position: relative;
+    width: 15%;
+    height: 300px;
+    background-color: lemonchiffon;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+}
+.nnumberPassword h1{
+   margin-bottom: 15px;
+}
+.numberPassword{
+    display: flex;
+    line-height: 30px;
+    
+}
+/* all notification */
+.notification{
+    width: 100%;
+    background-color: lightslategray;
+    height: 300px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.notification h2{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(202, 206, 212);
+    margin: 5px 0;
+    text-decoration:underline;
+
+}
+
+.crosnoti{
+    margin:10px 0 0 10px;
+}
+
+.depnotic{
+    position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #05cbee;
+  color: darkblue;
+  font-weight: 500;
+  border-radius: 15px 0 15px 15px;
+  margin-top: 10px;
+}
+.noticx{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+}
